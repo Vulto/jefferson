@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jefferson Sa</title>
+    <style>
+        :root { --text: #111; }
+        body {
+            margin: 0 auto;
+            max-width: 680px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #ffffff;
+            color: var(--text);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #eee;
+        }
+        .logo { font-weight: 700; font-size: 1.4rem; }
+        .nav-links a {
+            margin-left: 24px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+        }
+        .nav-links a:hover { text-decoration: underline; }
+        header {
+            padding: 80px 0 100px;
+            text-align: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+            object-fit: cover;
+            border: 3px solid #eee;
+        }
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 0 0 16px;
+        }
+        .tagline {
+            font-size: 1.35rem;
+            color: #444;
+        }
+        section {
+            padding: 80px 0;
+            border-top: 1px solid #eee;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 32px;
+        }
+        .about p {
+            font-size: 1.15rem;
+            color: #333;
+        }
+        .projects {
+            display: grid;
+            gap: 32px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 28px;
+            border-radius: 8px;
+        }
+        .project h3 {
+            margin: 0 0 12px;
+        }
+        .project p { color: #555; }
+        .links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .links a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding-top: 60px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.6rem; }
+            .nav-links a { margin-left: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Jefferson Sa</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <img src="https://pbs.twimg.com/profile_images/1701979102788362241/EXfPQNLK.jpg" alt="Jefferson Sa" class="avatar">
+        <h1>Jefferson Sa</h1>
+        <p class="tagline">C23 programmer • Linux minimalist • Suckless tools</p>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About</h2>
+        <p>I build fast, correct, and minimal software. UNIX philosophy and suckless principles guide everything I write.</p>
+        <p>Daily driver on Gentoo and Arch. Heavy user of dwm, st, neovim, and other tools that do one thing well. All code in modern C23.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>nobuild</h3>
+                <p>Zero-dependency build system written entirely in C23.</p>
+                <div class="links"><a href="https://github.com/YOURNAME/nobuild" target="_blank">github</a></div>
+            </div>
+            <div class="project">
+                <h3>dotfiles</h3>
+                <p>Clean configs for dwm, st, neovim, nsxiv, and the rest of the stack.</p>
+                <div class="links"><a href="https://github.com/YOURNAME/dotfiles" target="_blank">github</a></div>
+            </div>
+            <!-- add more projects here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Say hi on <a href="https://x.com/Krutofar" target="_blank">@Krutofar</a> or email me at <a href="mailto:your@email.com">your@email.com</a></p>
+    </section>
+
+    <footer>
+        © Jefferson Sa • Hand-written HTML + CSS
+    </footer>
+</body>
+</html>
